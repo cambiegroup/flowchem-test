@@ -2,15 +2,14 @@
 from collections.abc import Iterable
 
 from flowchem.components.base_component import FlowchemComponent
-from flowchem.devices.flowchem_device import DeviceInfo, Person
+from flowchem.devices.flowchem_device import DeviceInfo
 from flowchem.devices.flowchem_device import FlowchemDevice
+from flowchem.utils.people import dario
 
 from .test_component import TestComponent
 
 
 __all__ = ["FakeDevice"]
-
-dario = Person(name="Dario Cambiè", email="2422614+dcambie@users.noreply.github.com")
 
 
 class FakeDevice(FlowchemDevice):
