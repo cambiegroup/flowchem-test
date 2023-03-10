@@ -35,7 +35,6 @@ dev = [
     "mypy",
     "black",
     "ruff",
-    "pre-commit",
 ]
 
 [project.urls]
