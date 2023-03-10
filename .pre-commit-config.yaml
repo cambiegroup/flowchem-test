@@ -17,14 +17,8 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
 
--   repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.8.2
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.0.254'
     hooks:
-    -   id: reorder-python-imports
-        args: ["--py39-plus", "--application-directories=.:src"]
-
--   repo: https://github.com/asottile/pyupgrade
-    rev: v2.38.0
-    hooks:
-        -   id: pyupgrade
-            args: [--py310-plus]
+    -   id: ruff
+        args: [--fix]

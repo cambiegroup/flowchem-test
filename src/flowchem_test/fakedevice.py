@@ -13,7 +13,6 @@ __all__ = ["FakeDevice"]
 
 
 class FakeDevice(FlowchemDevice):
-
     metadata = DeviceInfo(
         authors=[dario],
         maintainers=[dario],
