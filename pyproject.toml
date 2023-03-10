@@ -34,7 +34,8 @@ dependencies = [
 dev = [
     "mypy",
     "black",
-    "pre-commit"
+    "ruff",
+    "pre-commit",
 ]
 
 [project.urls]
