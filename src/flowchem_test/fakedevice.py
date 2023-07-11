@@ -9,9 +9,6 @@ from flowchem.utils.people import dario
 from .test_component import TestComponent
 
 
-__all__ = ["FakeDevice"]
-
-
 class FakeDevice(FlowchemDevice):
     metadata = DeviceInfo(
         authors=[dario],
