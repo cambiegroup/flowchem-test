@@ -10,7 +10,7 @@ from .test_component import TestComponent
 
 
 class FakeDevice(FlowchemDevice):
-    metadata = DeviceInfo(
+    device_info = DeviceInfo(
         authors=[dario],
         maintainers=[dario],
         manufacturer="virtual-device",
