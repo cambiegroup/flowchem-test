@@ -15,13 +15,13 @@ class TestComponent(FlowchemComponent):
 
 class FakeDevice(FlowchemDevice):
     device_info = DeviceInfo(
-            authors=[dario],
-            maintainers=[dario],
-            manufacturer="virtual-device",
-            model="FakeDevice",
-            serial_number=42,
-            version="v1.0",
-        )
+        authors=[dario],
+        maintainers=[dario],
+        manufacturer="virtual-device",
+        model="FakeDevice",
+        serial_number=42,
+        version="v1.0",
+    )
 
     async def initialize(self):
         """Add component to device."""
