@@ -1,15 +1,6 @@
 [build-system]
-requires = ["setuptools>64", "wheel", "pip>=22"]
+requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-flowchem_test = ["py.typed"]
 
 [project]
 name = "flowchem-test"
@@ -19,29 +10,43 @@ readme = "README.md"
 requires-python = ">=3.10"
 license =  { text = "MIT" }
 keywords = ["chemistry", "automation", "laboratory", "testing"]
+license = "MIT"
+license-files = ['LICEN[CS]E*',]
+keywords = ["chemistry", "automation", "laboratory", "science"]
 authors = [
     { name = "Dario Cambié", email = "2422614+dcambie@users.noreply.github.com" },
 ]
 maintainers = [
-  { name = "Dario Cambié", email = "2422614+dcambie@users.noreply.github.com" }
+  { name = "Jakob Wolf", email = "" }
 ]
-classifiers = ["License :: OSI Approved :: MIT License"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent"
+]
 dependencies = [
     "flowchem",
 ]
-
 [project.optional-dependencies]
 dev = [
     "mypy",
     "black",
     "ruff",
 ]
-
 [project.urls]
 repository = "https://github.com/cambiegroup/flowchem-test"
-
 [project.entry-points."flowchem.devices"]
 test-device = "flowchem_test.fakedevice"
-
 [tool.ruff]
 line-length = 120
