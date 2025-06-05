@@ -15,7 +15,7 @@ authors = [
     { name = "Dario Cambié", email = "2422614+dcambie@users.noreply.github.com" },
 ]
 maintainers = [
-  { name = "Jakob Wolf", email = "" }
+  { name = "Jakob Wolf", email = "75418671+JB-Wolf@users.noreply.github.com" }
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
