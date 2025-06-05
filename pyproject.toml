@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "flowchem-test"
-version = "0.1b4"
+version = "0.1b5"
 description = "Add support for test devices in flowchem."
 readme = "README.md"
 requires-python = ">=3.10"
