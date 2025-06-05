@@ -39,9 +39,7 @@ jobs:
     needs:
     - build
     runs-on: ubuntu-latest
-    environment:
-      name: pypi
-      url: https://pypi.org/p/flowchem
+
     permissions:
       id-token: write
     steps:
@@ -58,10 +56,6 @@ jobs:
     needs:
     - build
     runs-on: ubuntu-latest
-
-    environment:
-      name: testpypi
-      url: https://test.pypi.org/p/flowchem1
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
