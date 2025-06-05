@@ -39,4 +39,4 @@ jobs:
           mypy --check-untyped-defs --python-version 3.10 --ignore-missing-imports ./src
 
       - name: Run ruff
-        run: ruff .
+        run: ruff check ./src
